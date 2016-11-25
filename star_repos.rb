@@ -1,5 +1,6 @@
 # This script gets the list of repos under a certain organization,
-# and stars all of them. Purpose: To get all of your contributions listed on your profile.
+# and stars all of them.
+# Purpose: To get all of your contributions listed on your profile.
 
 # HOW TO RUN:
   # gem install octokit
