@@ -19,6 +19,7 @@ password = (STDIN.noecho(&:gets)).gsub("\n","")
 print "\nEnter organization name: "
 org_name = gets.chomp
 
+# Connect to GitHub
 print "Connecting to GitHub..."
 client = Octokit::Client.new(:login => username, :password => password)
 print " Done!\n"
@@ -28,6 +29,7 @@ Octokit.auto_paginate = true
 org_repos = Octokit.org_repos(org_name)
 print " Done!\n"
 
+# Start starring process
 i = 0
 for repo in org_repos
    i += 1
